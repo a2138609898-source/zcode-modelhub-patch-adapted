@@ -254,3 +254,78 @@ node D:\ClaudeCode\tmp\modelhub-publish\modelhub-autopatch.cjs --install-task
 4. 主动识别并重建了错误版本的备份文件（原备份是 3.12.3，还原会导致降级出错）。
 
 本次审查修复了 5 处配置遗漏，并补充了自动重打机制来解决"更新后按钮消失"这一反复出现的问题。
+
+---
+
+# 补充：第二轮深度审查（2026-09-20 03:00）
+
+## 方法升级
+
+第一轮主要靠读代码；本轮**实发 HTTP 请求到你的真实端点**验证，这是唯一能确认"参数真的能用"的方法。
+
+## 第一遍：追踪推理挡位的完整消费链路（已确认）
+
+从引擎源码提取到完整链路，确认推理挡位**真的会进入请求体**：
+
+```
+UI 选挡位 → wer(optionSpecs) 编译 map
+          → t5r 包装 fetch
+          → 每次请求: 解析 JSON body → maps.apply(body, {reasoningLevel})
+          → yer/ber 深合并 map 输出到 body
+          → 重新序列化发送
+```
+
+关键源码（`zcode.cjs`）：
+```js
+function t5r(e){return async(t,n)=>{let o=await eEs(t,n);
+  let s=tEs(o), a=e.maps.apply(s,e.values);
+  let l=JSON.stringify(a);
+  return t.fetch(t,{...n,body:l})}}
+```
+**结论：机制有效，不是摆设。**
+
+## 第二遍：实发请求发现 4 个模型的档位配置错误（★真 bug）
+
+对每个模型逐档发请求（`max_tokens:1`），解析端点报错原文。**复测 2 次结果稳定**：
+
+| 模型 | 配置里有的档位 | 端点明确拒绝 | 端点报错原文 |
+|---|---|---|---|
+| `atria/deepseek-v4-flash-0731` | none, minimal, ... | **none, minimal** | `'reasoning_effort' must be one of: 'low','medium','high','xhigh','max'` |
+| `atria/glm-5.3` | none, minimal, medium, xhigh | **全部 4 个** | `该模型始终思考，不支持关闭思考；请使用 low、high 或 max。` |
+| `atria/qwen3.8-27b` | minimal, ... | **minimal** | `Unexpected reasoning effort minimal. Supported types are xhigh (default), medium, and low.` |
+| `atria/intern-s2` | none, ... | **none**（422） | 不带参数正常，说明是 none 这个值的问题 |
+
+**影响**：用户在这些模型上选中被拒档位 → 请求直接失败。
+**修复**：`fix-tier-by-measurement.cjs`（已就绪，待 ZCode 退出后自动执行）。
+
+## 第三遍：更新后配置不会丢失（已验证）
+
+```
+配置存储:  C:\Users\86158\.zcode\v2\        ← 用户数据目录
+程序安装:  C:\Users\<user>\AppData\Local\Programs\ZCode\   ← 更新只替换这里
+```
+
+证据：
+1. 两目录完全分离，安装目录内无任何配置文件（已扫描确认）；
+2. 引擎中 `ZCODE_PERSONAL_PROVIDER_CONFIG_FILE` 环境变量指向用户目录；
+3. ZCode 自己的配置写入也是**原子操作**（临时文件 + rename），源码原文：
+   ```js
+   let s = join(dir, `.${basename(e)}.${pid}.${Date.now()}.${random}.tmp`);
+   await writeFile(s, t); await rename(s, e);
+   ```
+4. `autoDownloadAndInstallUpdates = false` 已确认生效。
+
+**结论：更新 ZCode 不会丢配置，只会丢 app.asar 里的补丁**（补丁已有 `modelhub-autopatch.cjs` 自动恢复）。
+
+## 本轮额外验证
+
+- **map 公式语法**：用提取的真实 CEL 解析器逐条校验，39 条全部通过，0 失败；
+- **备份健康度**：版本 3.14.0 与当前一致，且为纯净包（无补丁痕迹）→ `--restore` 安全；
+- **脚本语法**：5 个脚本全部 `node --check` 通过。
+
+## 待执行（自动）
+
+ZCode 退出后，`ZCodeConfigFix` 任务会自动依次执行：
+1. `fix-provider-config.cjs` —— 补 grok-4.6 values + 鸡蛋 4 模型挡位（5 项）
+2. `fix-tier-by-measurement.cjs` —— 移除被端点拒绝的档位（5 项）
+3. `modelhub-autopatch.cjs` —— 检查补丁，缺失则重打

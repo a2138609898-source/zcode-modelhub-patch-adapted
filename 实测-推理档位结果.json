@@ -1,0 +1,415 @@
+[
+  {
+    "mid": "Agents-A1",
+    "cfgVals": [
+      "none",
+      "low",
+      "medium",
+      "high"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"Hello\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844030,\"id\":\"c6b81ead1836473e938cf3e58e8800c1\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScienc"
+      },
+      "minimal": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"Thinking\",\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844033,\"id\":\"1684bd8a048f4d78bbdbd69c394a5849\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScien"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"思维\",\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844035,\"id\":\"dc379752790247f6b8381c66d537a7c4\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScience/Age"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"Hi\",\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844037,\"id\":\"941d31d8d42544b2aefc4238fe2891a1\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScience/Age"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"uming\",\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844039,\"id\":\"fc826509119e4f05a9c4ddee74a20a12\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScience/"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"Okay\",\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844042,\"id\":\"eedae3470a0143b9a099e768e6cc4ac6\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScience/A"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"Hello\",\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"matched_stop\":null}],\"created\":1789844044,\"id\":\"0a2ba4242a9e412aa59789d4f254c10c\",\"metadata\":{\"weight_version\":\"default\"},\"model\":\"InternScience/"
+      }
+    }
+  },
+  {
+    "mid": "Atria-Dawn-Preview",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"Hi\",\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844048,\"ec_transfer_par"
+      },
+      "minimal": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844050,\"ec_transfer_pa"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"finish_reason\":\"length\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":null,\"function_call\":null,\"refusal\":null,\"role\":\"assistant\",\"reasoning_content\":\"Let\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1789844054,\"ec_transfer_pa"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844065,\"ec_transfer_pa"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"User\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844068,\"ec_transfer_p"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"Let\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844071,\"ec_transfer_pa"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"Let\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844073,\"ec_transfer_pa"
+      }
+    }
+  },
+  {
+    "mid": "deepseek-v4-flash-0731",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"'reasoning_effort' must be one of: 'low', 'medium', 'high', 'xhigh', 'max'\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_263d10bd-0916-4927-ba43-12ad107fc8e4\"}\n"
+      },
+      "minimal": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"'reasoning_effort' must be one of: 'low', 'medium', 'high', 'xhigh', 'max'\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_c2f8fc30-f7b9-485b-88af-90d3c88fda13\"}\n"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"message\":{\"content\":\"\",\"reasoning_content\":\"Okay\",\"role\":\"assistant\"},\"finish_reason\":\"length\",\"index\":0,\"logprobs\":null}],\"created\":1789844083,\"id\":\"chatcmpl-45e353d4-bf2e-9eb3-a652-9535138fc348\",\"model\":\"deepseek-v4-flash-0731\",\"object\":\"chat.completion\",\"request_id\":\"req_5a0fbd09-38"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"message\":{\"content\":\"\",\"reasoning_content\":\"We\",\"role\":\"assistant\"},\"finish_reason\":\"length\",\"index\":0,\"logprobs\":null}],\"created\":1789844087,\"id\":\"chatcmpl-e7168b6d-eaf4-9619-b3bc-f45efe88799f\",\"model\":\"deepseek-v4-flash-0731\",\"object\":\"chat.completion\",\"request_id\":\"req_0e79c689-af74"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"message\":{\"content\":\"\",\"reasoning_content\":\"We\",\"role\":\"assistant\"},\"finish_reason\":\"length\",\"index\":0,\"logprobs\":null}],\"created\":1789844091,\"id\":\"chatcmpl-f08f512f-635e-945b-af63-b280bd0d5b46\",\"model\":\"deepseek-v4-flash-0731\",\"object\":\"chat.completion\",\"request_id\":\"req_c9589204-5b2e"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"message\":{\"content\":\"\",\"reasoning_content\":\"We\",\"role\":\"assistant\"},\"finish_reason\":\"length\",\"index\":0,\"logprobs\":null}],\"created\":1789844095,\"id\":\"chatcmpl-36c17cea-4ec9-9d50-960a-991a78459b5d\",\"model\":\"deepseek-v4-flash-0731\",\"object\":\"chat.completion\",\"request_id\":\"req_43439d5c-fb91"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"message\":{\"content\":\"\",\"reasoning_content\":\"We\",\"role\":\"assistant\"},\"finish_reason\":\"length\",\"index\":0,\"logprobs\":null}],\"created\":1789844100,\"id\":\"chatcmpl-2b10235c-3d28-9524-ab76-45aa15df827d\",\"model\":\"deepseek-v4-flash-0731\",\"object\":\"chat.completion\",\"request_id\":\"req_b1f6ad7c-6bb8"
+      }
+    }
+  },
+  {
+    "mid": "deepseek-v4-flash-vision",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"Hello\",\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844103,\"ec_transfer_"
+      },
+      "minimal": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" Okay\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844105,\"ec_transfer_"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"Okay\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844107,\"ec_transfer_p"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"Okay\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844109,\"ec_transfer_p"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"Hi\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844111,\"ec_transfer_par"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844114,\"ec_transfer_par"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844116,\"ec_transfer_pa"
+      }
+    }
+  },
+  {
+    "mid": "deepseek-v4-pro-0813",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"Hi\",\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844120,\"id\":\"chatcmpl-e"
+      },
+      "minimal": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844123,\"id\":\"chatcmpl-2"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844125,\"id\":\"chatcmpl-d"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844128,\"id\":\"chatcmpl-a"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844131,\"id\":\"chatcmpl-6"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844133,\"id\":\"chatcmpl-9"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844136,\"id\":\"chatcmpl-6"
+      }
+    }
+  },
+  {
+    "mid": "glm-5.3",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"该模型始终思考，不支持关闭思考；请使用 low、high 或 max。\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_99c996dc-c14f-4fde-b704-ca9054f2af1c\"}\n"
+      },
+      "minimal": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"该模型始终思考，不支持关闭思考；请使用 low、high 或 max。\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_75cdf955-0a29-49f9-a877-de9a081d7499\"}\n"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"finish_reason\":\"length\",\"index\":0,\"message\":{\"content\":\"\",\"reasoning_content\":\"Let\",\"role\":\"assistant\"}}],\"created\":1789844144,\"id\":\"202609200255449c4dcf0d4aa94215\",\"model\":\"glm-5.3\",\"object\":\"chat.completion\",\"request_id\":\"req_9cdf2b89-548d-42ff-b85d-75f23b030690\",\"usage\":{\"completion"
+      },
+      "medium": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"该模型始终思考，不支持关闭思考；请使用 low、high 或 max。\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_b9cd9401-547c-4b61-8c59-a6c6c5eacaa4\"}\n"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"finish_reason\":\"length\",\"index\":0,\"message\":{\"content\":\"\",\"reasoning_content\":\"Let\",\"role\":\"assistant\"}}],\"created\":1789844150,\"id\":\"20260920025549ef63375e27304bb8\",\"model\":\"glm-5.3\",\"object\":\"chat.completion\",\"request_id\":\"req_8f2e7f80-30f9-48a3-91e7-ddfbb101cd2f\",\"usage\":{\"completion"
+      },
+      "xhigh": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"该模型始终思考，不支持关闭思考；请使用 low、high 或 max。\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_8df7785c-e093-47e7-bafa-3c6374225448\"}\n"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"finish_reason\":\"length\",\"index\":0,\"message\":{\"content\":\"\",\"reasoning_content\":\"Let\",\"role\":\"assistant\"}}],\"created\":1789844156,\"id\":\"202609200255560720bab843ac48e4\",\"model\":\"glm-5.3\",\"object\":\"chat.completion\",\"request_id\":\"req_fdd6f32f-3c1b-411b-b8dd-9f365914d77a\",\"usage\":{\"completion"
+      }
+    }
+  },
+  {
+    "mid": "intern-s2",
+    "cfgVals": [
+      "none",
+      "low",
+      "medium",
+      "high"
+    ],
+    "results": {
+      "none": {
+        "code": 422,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"request rejected by upstream provider\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_4d8c2676-0d5e-4760-b260-f8ca3a4ca2e0\"}\n"
+      },
+      "minimal": {
+        "code": 422,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"request rejected by upstream provider\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_97089fca-2648-4d73-8728-f587fb44e48c\"}\n"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"reasoning_content\":\"Thinking\",\"tool_calls\":null},\"logprobs\":null,\"output_token_logprobs\":null,\"finish_reason\":\"length\",\"output_ids\":null,\"routed_experts\":null}],\"created\":1789844166,\"id\":\"6751\",\"model\":\"Intern-S2\",\"object\":\"chat.co"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"reasoning_content\":\"Thinking\",\"tool_calls\":null},\"logprobs\":null,\"output_token_logprobs\":null,\"finish_reason\":\"length\",\"output_ids\":null,\"routed_experts\":null}],\"created\":1789844177,\"id\":\"6752\",\"model\":\"Intern-S2\",\"object\":\"chat.co"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"reasoning_content\":\"Thinking\",\"tool_calls\":null},\"logprobs\":null,\"output_token_logprobs\":null,\"finish_reason\":\"length\",\"output_ids\":null,\"routed_experts\":null}],\"created\":1789844182,\"id\":\"6737\",\"model\":\"Intern-S2\",\"object\":\"chat.co"
+      },
+      "xhigh": {
+        "code": 422,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"request rejected by upstream provider\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_ba0599bb-5ea2-4133-84d3-aa5ceccf35ff\"}\n"
+      },
+      "max": {
+        "code": 422,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"request rejected by upstream provider\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_d395c8c1-3ef0-4084-95fa-4adcf7bc374c\"}\n"
+      }
+    }
+  },
+  {
+    "mid": "kimi-k2.6",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\" The\",\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844198,\"ec_transfer_p"
+      },
+      "minimal": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844200,\"ec_transfer_p"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844202,\"ec_transfer_p"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844205,\"ec_transfer_p"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844208,\"ec_transfer_p"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844210,\"ec_transfer_p"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\" The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844213,\"ec_transfer_p"
+      }
+    }
+  },
+  {
+    "mid": "minimax-m3",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844217,\"i"
+      },
+      "minimal": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844221,\"i"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844223,\"i"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844225,\"i"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844228,\"i"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844230,\"i"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning_content\":\"\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844232,\"i"
+      }
+    }
+  },
+  {
+    "mid": "qwen3.8-27b",
+    "cfgVals": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "results": {
+      "none": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"Hello\",\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844236,\"id\":\"chatcmp"
+      },
+      "minimal": {
+        "code": 400,
+        "text": "{\"error\":{\"code\":\"upstream_request_rejected\",\"message\":\"Unexpected reasoning effort minimal. Supported types are xhigh (default), medium, and low.\",\"type\":\"invalid_request_error\"},\"request_id\":\"req_684c931d-a926-41bc-8047-2cdb1fdcfc23\"}\n"
+      },
+      "low": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844240,\"id\":\"chatcmpl-"
+      },
+      "medium": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844243,\"id\":\"chatcmpl-"
+      },
+      "high": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844245,\"id\":\"chatcmpl-5"
+      },
+      "xhigh": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"We\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844247,\"id\":\"chatcmpl-a"
+      },
+      "max": {
+        "code": 200,
+        "text": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null,\"routed_experts\":null}],\"created\":1789844249,\"id\":\"chatcmpl-"
+      }
+    }
+  }
+]
